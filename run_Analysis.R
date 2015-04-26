@@ -13,10 +13,6 @@ trainSub <- read.table("./UCI HAR Dataset/train/subject_train.txt",header=FALSE)
 featuresColNames <- read.table("./UCI HAR Dataset/features.txt", header=FALSE)
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt",header=FALSE)
 
-#3 set activity names
-#testY$V1 <- factor(testY$V1,levels=activities$V1,labels=activities$V2)
-#trainData_act$V1 <- factor(trainData_act$V1,levels=activities$V1,labels=activities$V2)
-
 
 # 1- Merge data
 mergedSubject <- rbind(trainSub, testSub)
